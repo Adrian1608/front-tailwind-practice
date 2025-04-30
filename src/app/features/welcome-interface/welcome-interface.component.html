@@ -19,21 +19,15 @@
     <section class="flex justify-center text-center gap-12 flex-col md:flex-row">
       <div class="ml-4 mr-4 bg-yellow-400">
         <h3 class="text-xl m-2">Registro de Personas</h3>
-        <a routerLink="/people" routerLinkActive="active" ariaCurrentWhenActive="page">
-          <button class="cursor-pointer bg-blue-500 text-white px-4 py-2 rounded hover:bg-green-600 mb-2">Entrar</button>
-        </a>
+        <app-custom-button buttonText="Entrar" routerDirection="/people"></app-custom-button>
       </div>
       <div class="ml-4 mr-4 bg-yellow-400">
         <h3 class="text-xl m-2">Registro de Standby 1</h3>
-        <a routerLink="/standby-1" routerLinkActive="active" ariaCurrentWhenActive="page">
-          <button class="cursor-pointer bg-blue-500 text-white px-4 py-2 rounded hover:bg-green-600 mb-2">Entrar</button>
-        </a>
+        <app-custom-button buttonText="Entrar" routerDirection="/standby-1"></app-custom-button>
       </div>
       <div class="ml-4 mr-4 bg-yellow-400">
         <h3 class="text-xl m-2">Página de Error 404</h3>
-        <a routerLink="/error-404" routerLinkActive="active" ariaCurrentWhenActive="page">
-          <button class="cursor-pointer bg-blue-500 text-white px-4 py-2 rounded hover:bg-green-600 mb-2">Entrar</button>
-        </a>
+        <app-custom-button buttonText="Entrar" routerDirection="/error-404"></app-custom-button>
       </div>
     </section>
 

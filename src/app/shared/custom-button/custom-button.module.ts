@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
-import { NotFoundComponent } from './not-found.component';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { CustomButtonComponent } from './custom-button.component';
 
 
 @NgModule({
   declarations: [
-    NotFoundComponent
+    CustomButtonComponent
   ],
   imports: [
     CommonModule,
@@ -15,6 +15,6 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
     RouterLinkActive
   ],
   providers: [],
-  exports: [NotFoundComponent]
+  exports: [CustomButtonComponent]
 })
-export class NotFoundModule { }
+export class CustomButtonModule { }

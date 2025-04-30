@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { WelcomeInterfaceComponent } from './welcome-interface.component';
 import { CommonModule } from '@angular/common';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { CustomButtonModule } from '../../shared/custom-button/custom-button.module';
 
 
 @NgModule({
@@ -10,9 +10,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
   ],
   imports: [
     CommonModule,
-    RouterOutlet,
-    RouterLink,
-    RouterLinkActive
+    CustomButtonModule
   ],
   providers: [],
   exports: [WelcomeInterfaceComponent]
