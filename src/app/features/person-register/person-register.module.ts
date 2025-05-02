@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgFor } from '@angular/common';
 import { CustomButtonModule } from '../../shared/custom-button/custom-button.module';
 import { RouterModule, Routes } from '@angular/router';
 import { PersonRegisterComponent } from './person-register.component';
