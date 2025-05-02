@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xml:lang>
+<head>
+  <title>Registrar personas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="bg-blue-200 bg-cover min-h-screen">
+
+  <section class="text-center mb-4 pt-4">
+    <h2 class="font-medium text-2xl mx-auto">REGISTRO DE PERSONAS</h2>
+  </section>
+
+  <section class="flex justify-center max-w-3xl mx-auto text-center m-4 gap-3 flex-col md:flex-row bg-blue-400">
+    <div class="px-2 py-2 m-2 max-w-120 bg-blue-200 rounded w-full">
+      <div class="text-black text-start">
+        <strong>Búsqueda</strong>
+      </div>
+      <div class="flex mx-auto m-4 gap-2 ">
+        <div>
+          <input type="text" placeholder="Insertar nombre..." class="bg-white">
+        </div>
+        <div>
+          <input type="text" placeholder="Insertar apellido..." class="bg-white">
+        </div>
+        <div>
+          <input type="text" placeholder="Insertar edad..." class="bg-white">
+        </div>
+        <div>
+          <input type="text" placeholder="Insertar estado legal..." class="bg-white">
+        </div>
+      </div>
+    </div>
+    <button class="cursor-pointer bg-red-400 text-white px-2 py-2 rounded hover:bg-green-600 m-2">(lupa) Buscar</button>
+  </section>
+
+  <section class="flex justify-end mx-auto max-w-3xl p-1.5 rounded text-center gap-3 flex-col md:flex-row bg-blue-400">
+    <div class="bg-red-400 rounded text-white p-1.5">
+      <strong>+</strong> INSERTAR
+    </div>
+    <div class="bg-red-400 rounded text-white p-1.5">
+      Elementos:
+      <select class="ml-2 pl-2 text-black bg-amber-50">
+        <option>5</option>
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+        <option>100</option>
+      </select>
+    </div>
+  </section>
+
+  <section class="justify-center text-center m-4"> <!-- DIV para la tabla -->
+    TABLA
+  </section>
+
+  <section class="flex justify-center gap-48 text-center">
+    <app-custom-button buttonText="Regresar" routerDirection="/welcome-interface"></app-custom-button>
+    <div class="inline-block py-2 px-4 mb-2 bg-red-400 rounded text-white">
+      1 |
+      2 |
+      3 |
+      ... |
+      99
+    </div>
+  </section>
+
+</body>
+</html>

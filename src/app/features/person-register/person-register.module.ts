@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
-import { NotFoundComponent } from './not-found.component';
 import { CommonModule } from '@angular/common';
 import { CustomButtonModule } from '../../shared/custom-button/custom-button.module';
 import { RouterModule, Routes } from '@angular/router';
+import { PersonRegisterComponent } from './person-register.component';
 
 const routes: Routes = [
-  { path: '', component: NotFoundComponent }
+  { path: '', component: PersonRegisterComponent }
 ];
 
 @NgModule({
   declarations: [
-    NotFoundComponent
+    PersonRegisterComponent
   ],
   imports: [
     CommonModule,
@@ -18,6 +18,6 @@ const routes: Routes = [
     RouterModule.forChild(routes)
   ],
   providers: [],
-  exports: [NotFoundComponent]
+  exports: [PersonRegisterComponent]
 })
 export class NotFoundModule { }
